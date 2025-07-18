@@ -103,21 +103,14 @@ export default function page() {
                         {list}
                       </p>
 
-                      {/* {taskList.length === 0 &&
-                        (
-                          <>
-                            {list === "Pending" && <p> No Pending Tasks 😶</p>}
-                            {list === "OnGoing" && <p>No Ongoing Tasks 🚧</p>}
-                            {list === "Done" && <p>No Done Tasks ✅ </p>}
-                          </>
-                        ) } */}
+                     
 
                       {taskList.filter((t) => t.status === list).length ===
                         0 && (
                         <>
-                          {list === "Pending" && <p className="text-yellow-500"> No Pending Tasks 😶</p>}
-                          {list === "OnGoing" && <p  className="text-blue-500">No Ongoing Tasks 🚧</p>}
-                          {list === "Done" && <p  className="text-green-500">No Done Tasks ✅</p>}
+                          {list === "Pending" && <p className="text-yellow-500"> No Pending Tasks </p>}
+                          {list === "OnGoing" && <p  className="text-blue-500">No Ongoing Tasks </p>}
+                          {list === "Done" && <p  className="text-green-500">No Done Tasks </p>}
                         </>
                       )}
 
